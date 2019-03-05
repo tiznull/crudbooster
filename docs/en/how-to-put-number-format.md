@@ -10,15 +10,15 @@
 ### Products
 ```php
 $this->col[] = ["label"=>"Name","name"=>"name"];
-$this->col[] = ["label"=>"Price","name"=>"price","callback_php"=>'number_format($row->price)';
+$this->col[] = ["label"=>"Price","name"=>"price","callback_php"=>'number_format($row->price)'];
 ```
 or
 
 ```php
 $this->col[] = ["label"=>"Name","name"=>"name"];
-$this->col[] = ["label"=>"Price","name"=>"price","callback_php"=>'number_format([price])';
+$this->col[] = ["label"=>"Price","name"=>"price","callback_php"=>'number_format([price])'];
 ```
-You can see we use **callback_php** . One think that you need to remember, don't use double quote instead use single quote.
+You can see we use **callback_php** . One thing that you need to remember, don't use double quotes, instead use single quotes to wrap the callback function.
 
 ## What's Next
 - [How To Make A Subquery Column in Grid Data](./how-to-make-subquery.md)
